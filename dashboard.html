@@ -1,0 +1,23 @@
+<h2>Dashboard Inventory</h2>
+
+<form id="form">
+  <input id="kode" placeholder="Kode">
+  <input id="nama" placeholder="Nama">
+  <input id="stok" type="number" placeholder="Stok">
+  <input id="harga" type="number" placeholder="Harga">
+  <button>Simpan</button>
+</form>
+
+<button onclick="exportExcel()">Export Excel</button>
+
+<h3>⚠️ Stok Menipis</h3>
+<ul id="lowStock"></ul>
+
+<table>
+<thead>
+<tr><th>Kode</th><th>Nama</th><th>Stok</th><th>Harga</th><th>Aksi</th></tr>
+</thead>
+<tbody id="data"></tbody>
+</table>
+
+<script src="js/app.js"></script>
