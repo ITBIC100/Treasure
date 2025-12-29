@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Inventory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>📦 Inventory Barang</h2>
+
+<form id="form">
+    <input type="text" id="kode" placeholder="Kode" required>
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="number" id="stok" placeholder="Stok" required>
+    <input type="number" id="harga" placeholder="Harga" required>
+    <button type="submit">Tambah</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Stok</th>
+            <th>Harga</th>
+        </tr>
+    </thead>
+    <tbody id="data"></tbody>
+</table>
+
+<script src="js/app.js"></script>
+</body>
+</html>
