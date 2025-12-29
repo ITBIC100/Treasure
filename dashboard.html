@@ -1,4 +1,19 @@
-<h2>Dashboard Inventory</h2>
+<h3 id="welcome"></h3>
+
+<button onclick="logout()">Logout</button>
+
+<div id="adminPanel">
+  <h4>Manajemen User</h4>
+  <input id="uuser" placeholder="Username">
+  <input id="upass" placeholder="Password">
+  <select id="urole">
+    <option value="admin">Admin</option>
+    <option value="staff">Staff</option>
+  </select>
+  <button onclick="addUser()">Tambah User</button>
+</div>
+
+<hr>
 
 <form id="form">
   <input id="kode" placeholder="Kode">
@@ -8,11 +23,6 @@
   <button>Simpan</button>
 </form>
 
-<button onclick="exportExcel()">Export Excel</button>
-
-<h3>⚠️ Stok Menipis</h3>
-<ul id="lowStock"></ul>
-
 <table>
 <thead>
 <tr><th>Kode</th><th>Nama</th><th>Stok</th><th>Harga</th><th>Aksi</th></tr>
@@ -21,3 +31,4 @@
 </table>
 
 <script src="js/app.js"></script>
+
